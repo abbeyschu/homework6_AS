@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="Assets/style.css"/>
+</head>
+<body>
+<header>
+    <h1>Weather Dashboard</h1>
+</header>
+<section id="search" class="search">
+    <h2>Search for a city</h2>
+    <div class="input-group mb-3">
+        <input id="searchInput" type="text" class="form-control" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+        </div>
+      </div>
+    <p>Search History</p>
+    <div class="list-group">
+        <button id="button1" type="button" class="list-group-item list-group-item-action"></button>
+        <button id="button2" type="button" class="list-group-item list-group-item-action"></button>
+        <button id="button3" type="button" class="list-group-item list-group-item-action"></button>
+        <button id="button4" type="button" class="list-group-item list-group-item-action"></button>
+        <button id="button5" type="button" class="list-group-item list-group-item-action"></button>
+    </div>
+</section>
+<div class="flex">
+<section id="today" class="today">
+    <h2>Search for a city on the left!</h2>
+    <div style="display:none">
+        <h3 id="city" class="city"></h3>
+        <p id="temp">Temperature: </p>
+        <p id="humidity">Humidity: </p>
+        <p id="wind">Wind Speed: </p>
+        <p id="uvindex">UV Index: </p>
+    </div>
+</section>
+<section id="forecast" class="forecast" style="display:none">
+    <h2>5 Day Forecast: </h2>
+</section>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="Assets/script.js"></script>
+</body>
+</html>
