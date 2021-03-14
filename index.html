@@ -22,26 +22,53 @@
       </div>
     <p>Search History</p>
     <div class="list-group">
-        <button id="button1" type="button" class="list-group-item list-group-item-action"></button>
-        <button id="button2" type="button" class="list-group-item list-group-item-action"></button>
-        <button id="button3" type="button" class="list-group-item list-group-item-action"></button>
-        <button id="button4" type="button" class="list-group-item list-group-item-action"></button>
-        <button id="button5" type="button" class="list-group-item list-group-item-action"></button>
+        <button id="buttonOne" type="button" class="list-group-item list-group-item-action"></button>
+        <button id="buttonTwo" type="button" class="list-group-item list-group-item-action"></button>
+        <button id="buttonThree" type="button" class="list-group-item list-group-item-action"></button>
+        <button id="buttonFour" type="button" class="list-group-item list-group-item-action"></button>
+        <button id="buttonFive" type="button" class="list-group-item list-group-item-action"></button>
     </div>
 </section>
-<div class="flex">
+<div>
 <section id="today" class="today">
     <h2>Search for a city on the left!</h2>
-    <div style="display:none">
+    <div>
         <h3 id="city" class="city"></h3>
-        <p id="temp">Temperature: </p>
-        <p id="humidity">Humidity: </p>
-        <p id="wind">Wind Speed: </p>
-        <p id="uvindex">UV Index: </p>
+        <p id="temp"></p>
+        <p id="humidity"></p>
+        <p id="wind"></p>
+        <p id="uvindex"></p>
     </div>
 </section>
-<section id="forecast" class="forecast" style="display:none">
+<section id="forecast" class="forecast" style="display:block">
     <h2>5 Day Forecast: </h2>
+    <div style="display:flex">
+    <div id="forecastOne" class="fiveDay">
+        <p id="dateOne"></p>
+        <p id="tempOne"></p>
+        <p id="humidityOne"></p>
+    </div>
+    <div id="forecastTwo" class="fiveDay">
+        <p id="dateTwo"></p>
+        <p id="tempTwo"></p>
+        <p id="humidityTwo"></p>
+    </div>
+    <div id="forecastThree" class="fiveDay">
+        <p id="dateThree"></p>
+        <p id="tempThree"></p>
+        <p id="humidityThree"></p>
+    </div>
+    <div id="forecastFour" class="fiveDay">
+        <p id="dateFour"></p>
+        <p id="tempFour"></p>
+        <p id="humidityFour"></p>
+    </div>
+    <div id="forecastFive" class="fiveDay">
+        <p id="dateFive"></p>
+        <p id="tempFive"></p>
+        <p id="humidityFive"></p>
+    </div>
+</div>
 </section>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
