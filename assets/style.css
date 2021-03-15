@@ -41,6 +41,15 @@ p{
     text-align: center;
 }
 
+.today p {
+    margin: 25px;
+}
+
+.today img {
+    min-height: 50px;
+    min-width: 50px;
+}
+
 .forecast{
     float: left;
     margin: 30px;
@@ -49,6 +58,8 @@ p{
     border-width: thin;
     border-radius: 10px;
     background-color: white;
+    align-items: center;
+    width: 100%;
 }
 
 .fiveDay{
